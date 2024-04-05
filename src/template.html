@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battleship!</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="page-title">BATTLESHIP</div>
+    </div>
+    <div class="game-area">
+      <div class="frame friendly-frame">
+        <div class="board-title friendly-title">FRIENDLY SEAS</div>
+        <div class="grid friendly-grid"></div>
+        <div class="status-container">
+          <div class="ship-status friendly-carrier carrier-status"></div>
+          <div class="ship-status friendly-battleship battleship-status"></div>
+          <div class="ship-status friendly-destroyer destroyer-status"></div>
+          <div class="ship-status friendly-submarine submarine-status"></div>
+          <div class="ship-status friendly-patrol patrol-boat-status"></div>
+        </div>
+        <div class="controls-dialogue"></div>
+        <div class="placement-options-container friendly-placement">
+          <button class="placement-button randomize-placement">
+            RANDOMIZE
+          </button>
+          <button class="placement-button reset-placement">RESET</button>
+          <button class="placement-button confirm-placement">CONFIRM</button>
+        </div>
+      </div>
+      <div class="frame enemy-frame highlight-frame">
+        <div class="board-title enemy-title">ENEMY SEAS</div>
+        <div class="grid enemy-grid"></div>
+        <div class="status-container">
+          <div class="ship-status enemy-carrier carrier-status"></div>
+          <div class="ship-status enemy-battleship battleship-status"></div>
+          <div class="ship-status enemy-destroyer destroyer-status"></div>
+          <div class="ship-status enemy-submarine submarine-status"></div>
+          <div class="ship-status enemy-patrol patrol-boat-status"></div>
+        </div>
+      </div>
+    </div>
+    <div class="game-over-screen">
+      <div class="game-over-dialogue">
+        <div class="game-over-title">Game Over</div>
+        <div class="game-over-text"></div>
+        <button class="reset-game">Reset Game</button>
+      </div>
+    </div>
+  </body>
+</html>
